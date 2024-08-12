@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .main-content {
+            flex: 1;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #f4f4f4;
+            padding: 15px;
+        }
+        .content {
+            flex: 1;
+            padding: 15px;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Dashboard</h1>
+    </div>
+    <div class="main-content">
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+                <li><a href="/addVehicle">Add vehicle</a></li>
+                <li><a href="/stops">Add vehicle stops</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="card">
+                <h2>Overview</h2>
+                <p>This section provides an overview of the dashboard.</p>
+            </div>
+            <div class="card">
+                <h2>Statistics</h2>
+                <p>Here you can see various statistics and data points.</p>
+            </div>
+            <div class="card">
+                <h2>Recent Activity</h2>
+                <p>Details of recent activity will appear here.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
